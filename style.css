@@ -1,0 +1,1317 @@
+ body {
+     height: 100%;
+     margin: 0;
+     padding: 0;
+     /* background-color: aliceblue; */
+     background-size: contain;
+     background-repeat: no-repeat;
+     /* background-image: linear-gradient(to top left, rgb(182 185 255) 40%, rgb(218 215 255)); */
+     /* background-image: linear-gradient(48deg, rgb(220, 255, 149), rgb(202, 204, 255), rgb(247, 209, 255), rgb(255, 228, 228), rgb(227, 255, 194), rgb(202, 204, 255), rgb(247, 209, 255), rgb(253, 255, 199)); */
+     /* background-image: linear-gradient(48deg, rgb(179, 255, 0), rgb(164, 167, 255), rgb(241, 179, 255), rgb(255, 223, 223), rgb(180, 255, 179), rgb(179, 255, 255)); */
+     background-image: linear-gradient(48deg, rgb(179, 255, 0), rgb(172, 175, 255), rgb(244, 193, 255), rgb(216, 216, 255), rgb(222, 217, 255), rgb(255, 217, 238));
+     background-size: 400% 400%;
+     animation: color 40s ease infinite;
+
+     /* 
+
+    background: linear-gradient(45deg ,
+            #00ff1a,
+            #000000,
+            red,
+            yellow ); */
+     background-size: 400% 400%;
+     animation: gradient 25s ease infinite;
+ }
+
+ @keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 0%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+ /* @keyframes color {
+    0% {
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+} */
+
+ * {
+     margin: 0;
+     padding: 0;
+     border: 0;
+     text-decoration: none;
+     box-sizing: border-box;
+ }
+
+ .topblur {
+     background-color: rgba(255, 255, 255, 0);
+     backdrop-filter: blur(5px);
+     height: 20px;
+     width: 100%;
+     position: fixed;
+     /* background-image: linear-gradient(to left, rgb(189 190 251) 40%, rgb(218 215 255)); */
+ }
+
+ header {
+     background-color: rgba(255, 255, 255, 0.712);
+     backdrop-filter: blur(4px);
+     height: 60px;
+     border-radius: 10px;
+     width: 97%;
+     /* box-shadow: 0px 5px 9px -6px; */
+     /* box-shadow: 0px 5px 15px -10px; */
+     box-shadow: 0px 5px 20px -15px;
+     margin: 20px 0px 0px 0px;
+     position: fixed;
+     z-index: 3;
+     left: 50%;
+     transform: translate(-50%, 0);
+ }
+
+ .hedderbg {
+     height: 60px;
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .leftbox {
+     height: 100%;
+     /* background-color: rgb(9, 132, 132); */
+     width: 20%;
+     align-items: center;
+     display: flex;
+     justify-content: left;
+ }
+
+ .fa-caret-down:hover.fa-caret-down {
+     transform: rotate(180deg);
+ }
+
+ .myself {
+     /* background-color: blue; */
+     font-size: 20px;
+     color: rgb(59, 59, 59);
+     margin-left: 30px;
+
+ }
+
+ .myprfile {
+     display: none;
+ }
+
+ /* .myself:hover .myprfile {
+    width: 27VW;
+    height: 70VH;
+    display: flex;
+    background-color: rgba(59, 59, 59, 0.229);
+    position: absolute;
+    top: 80px;
+    border-radius: 7px;
+    background-color: rgba(255, 255, 255, 0.725);
+    backdrop-filter: blur(4px);
+    box-shadow: 0px 5px 20px -15px;
+    overflow: hidden;
+    overflow-y: scroll;
+    backdrop-filter: blur(20px);
+} */
+ .myprfile {
+     width: 450px;
+     height: 0VH;
+     display: flex;
+     background-color: rgba(59, 59, 59, 0.229);
+     position: absolute;
+     top: 70px;
+     left: 0px;
+     border-radius: 7px;
+     background-color: rgb(255, 255, 255);
+     box-shadow: 0px 5px 20px -12px;
+     overflow: hidden;
+     overflow-y: scroll;
+     backdrop-filter: blur(20%);
+     transition: 0.5s ease-in-out;
+ }
+
+ .myself:hover .myprfile {
+     height: 500px;
+ }
+
+
+ .myprfile .clickevent {
+     backdrop-filter: blur(20%);
+     width: 450px;
+     height: 70VH;
+     display: flex;
+     background-color: rgba(59, 59, 59, 0.229);
+     position: absolute;
+     top: 70px;
+     left: 0px;
+     border-radius: 7px;
+     background-color: rgb(255, 255, 255);
+     box-shadow: 0px 5px 20px -12px;
+     overflow: hidden;
+     overflow-y: scroll;
+ }
+
+ .innerfullcont {
+     width: 100%;
+     width: 100%;
+     display: block;
+ }
+
+ .myprfile .upperproficon {
+     height: 130px;
+     width: 100%;
+     margin-top: 20px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     /* background-color: rgb(70, 70, 12); */
+ }
+
+ .myprfile .upperproficon .profile {
+     /* display: flex; */
+     /* height: 150px; */
+     width: 170px;
+     display: flex;
+     justify-content: center;
+     align-items: baseline;
+    }
+    .myprfile .upperproficon .profile img{
+     padding-top: 10px;
+    width: 100%;
+ }
+ .nameandproff {
+     width: 60%;
+     /* background-color: blue;
+     margin: auto;
+     text-align: left; */
+     /* padding-left: 10px; */
+ }
+
+ .nameandproff h1 {
+     font-family: "Averia Libre", system-ui;
+     color: rgb(76, 76, 76);
+     color: rgb(105, 108, 255);
+     text-shadow: 0px 5px 7px rgba(42, 42, 42, 0.227);
+     font-size: 28px;
+ }
+
+ .nameandproff h2 {
+     font-family: "Signika Negative", sans-serif;
+     color: rgb(97, 97, 97);
+     text-shadow: 0px 5px 7px rgba(42, 42, 42, 0.193);
+     font-size: 19px;
+ }
+
+ .bio {
+     width: 90%;
+     margin: 0 auto;
+     padding-top: 20px;
+     text-align: justify;
+     font-family: "Averia Libre", system-ui;
+     letter-spacing: 0px;
+     text-align: justify;
+     font-family: "Salsa", cursive;
+     font-size: 15px;
+ }
+
+ .bio1 {
+     width: 90%;
+     margin: 0 auto;
+     padding-top: 5px;
+     text-align: justify;
+     font-family: "Averia Libre", system-ui;
+     letter-spacing: px;
+     text-align: justify;
+     font-family: "Salsa", cursive;
+     font-size: 15px;
+ }
+
+ .skilllsmeter {
+     width: 90%;
+     height: fit-content;
+     /* background-color: cadetblue; */
+     padding-top: 20px;
+     display: flex;
+     flex-direction: column;
+     justify-content: right;
+     margin: 0 auto;
+     align-items: center;
+ }
+
+ .box1 {
+     width: 90%;
+     height: 30px;
+     margin-top: 3px;
+     margin-bottom: 3px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .skilname h1 {
+     font-family: "Averia Libre", system-ui;
+     font-size: 18px;
+     font-weight: bold;
+ }
+
+ .skilname {
+     width: 110px;
+     height: 28px;
+     display: flex;
+     justify-content: right;
+
+ }
+ .skilnamee h1{
+     font-family: "Averia Libre", system-ui;
+     font-size: 17px;
+     font-weight: 500;
+ }
+.skilnamee{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+    padding-top: 30px;
+    width: 90%;
+    margin: auto;
+}
+ .fulllevel {
+     width: 200px;
+     margin-left: 30px;
+     height: 10px;
+     border-radius: 50px;
+     background-color: rgb(197, 197, 197);
+     display: flex;
+ }
+
+ .innerlevel {
+     width: 70%;
+     height: 100%;
+     background-color: rgb(105, 108, 255);
+     border-radius: 10px;
+ }
+
+ .certicficate {
+     width: 91%;
+     /* background-color: rgba(152, 255, 120, 0.179); */
+     background-color: rgba(105, 108, 255, 0.082);
+     height: 100px;
+     border-radius: 5px;
+     margin: 0 auto;
+     margin-top: 20px;
+     box-shadow: 0px 5px 20px -15px;
+ }
+
+ .certificate11 {
+     position: fixed;
+     backdrop-filter: blur(10px);
+     /* background-image: linear-gradient(red,blue); */
+     width: 100%;
+     height: 100%;
+     z-index: 5;
+     filter: drop-shadow(0px 0 13px rgba(30, 30, 30, 0.366));
+     transition: 1s ease-in-out;
+     display: none;
+ }
+
+ .certificategd {
+     width: 91%;
+     /* background-color: rgba(152, 255, 120, 0.179); */
+     background-color: rgba(105, 108, 255, 0.082);
+     height: 100px;
+     border-radius: 5px;
+     margin: 0 auto;
+     margin-top: 20px;
+     box-shadow: 0px 5px 20px -15px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     cursor: pointer;
+ }
+
+ .logocerificate img {
+     height: 65px;
+     padding-right: 15px;
+     width: fit-content;
+ }
+
+ .head {
+     font-family: "Signika Negative", sans-serif;
+     font-size: 20px;
+ }
+
+ .textbox111 {
+     font-family: "Averia Libre", system-ui;
+     font-size: 17px;
+     font-weight: 600;
+ }
+
+ #myImage11 {
+     position: fixed;
+     width: 50vw;
+     border-radius: 20px;
+     filter: drop-shadow(0px 0 13px rgba(30, 30, 30, 0.366));
+     transition: 1s ease-in-out;
+     left: 465px;
+     top: 70px;
+     width: fit-content;
+     height: 68VH;
+     border-radius: 7px;
+     box-shadow: 0px 5px 20px -12px;
+
+ }
+
+ .hid dendiv11 {
+     display: none;
+ }
+
+ .certificategd :hover.hiddendiv11 {
+     display: flex;
+ }
+
+ .myprofileend {
+     width: 100%;
+     height: 60px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .innerline {
+     width: 70%;
+     height: 4px;
+     background-color: rgb(104, 104, 104);
+     border-radius: 50px;
+ }
+
+ ::-webkit-scrollbar {
+     width: 0px;
+ }
+
+ .middlebox {
+     height: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     /* background-color: rgb(106, 184, 4); */
+     width: 52%;
+ }
+
+ .middlebox11 {
+     display: flex;
+     height: 100%;
+     width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     /* background-color: rgb(106, 184, 4); */
+ }
+
+ .logo {
+     display: flex;
+     height: 80%;
+     padding-right: 30px;
+ }
+
+ .middlebox h1 {
+     color: rgb(59, 59, 59);
+     opacity: 100%;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     font-family: "Margarine", sans-serif;
+     font-family: "Averia Libre", system-ui;
+     font-size: 30px;
+ }
+
+ .rightbox {
+     height: 100%;
+     display: flex;
+     justify-content: right;
+     padding-right: 30px;
+     align-items: center;
+     /* background-color: rgb(159, 59, 59); */
+     width: 20%;
+     font-size: 21px;
+ }
+
+ .endmedialink {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     /* background-color: rgb(159, 59, 59); */
+     width: 100%;
+     height: 60px;
+     font-size: 21px;
+     display: none;
+ }
+
+ .endmedialink img {
+     margin-right: 10px;
+     width: 30px;
+     filter: drop-shadow(0px 4px 4px rgba(30, 30, 30, 0.366));
+ }
+
+ .rightbox img {
+     width: 30px;
+     filter: drop-shadow(0px 4px 4px rgba(30, 30, 30, 0.366));
+ }
+
+ .rightbox a {
+     margin-left: 10px;
+     width: 30PX;
+     height: 30px;
+ }
+
+ .body0 {
+     height: 100%;
+ }
+
+ .secbr {
+     /* background-color: rgb(255, 90, 90); */
+     height: 120px;
+ }
+
+ .frontgraphic {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+ }
+
+ .frontgraphic img {
+     width: 50%;
+ }
+
+ .body0 h1 {
+     font-size: 60px;
+     font-family: "Rubik Moonrocks", sans-serif;
+     /* font-family: "Averia Libre", system-ui; */
+     text-align: center;
+     font-weight: 400;
+     font-family: "Days One", sans-serif;
+     color: rgb(76, 76, 76);
+     text-shadow: 0px 5px 7px rgba(42, 42, 42, 0.284);
+     cursor: pointer;
+ }
+
+ .body0 ul {
+     display: flex;
+     justify-content: center;
+ }
+
+ .body0 ul li h1 {
+     font-weight: 100;
+     color: rgb(105, 108, 255);
+     text-shadow: 0px 5px 7px rgba(42, 42, 42, 0.193);
+     font-family: "Averia Libre", system-ui;
+     font-size: 17px;
+     font-weight: 600;
+ }
+
+ .body0 ul li {
+     margin-left: 40px;
+ }
+
+ .projects {
+     display: flex;
+     justify-content: center;
+     padding-top: 70px;
+     padding-right: 50px;
+     height: fit-content;
+ }
+
+ .leftcontent {
+     /* background-color: aqua; */
+     width: 500px;
+     height: fit-content;
+     display: flex;
+     justify-content: right;
+ }
+
+ .leftprojrct {
+     width: 90%;
+     /* background-color: rgb(0, 255, 38); */
+ }
+
+ .project1 h1 {
+     /* background-color: bisque; */
+     /* font-family: "Patrick Hand SC", cursive; */
+     /* font-family:"Roboto", sans-serif; */
+     /* font-family: "Palanquin Dark", sans-serif; */
+     font-family: "Signika Negative", sans-serif;
+     font-size: 16px;
+     color: rgb(50, 50, 50);
+     cursor: pointer;
+     display: flex;
+     text-align: left;
+     margin: 40px 0px 40px;
+     font-weight: 500;
+     font-family: "Averia Libre", system-ui;
+ }
+
+ .project1 :hover.appname {
+     text-align: left;
+     background-color: rgba(255, 255, 255, 0.422);
+     height: 50px;
+     width: fit-content+50px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     box-shadow: 0px 5px 25px -15px;
+     border-radius: 15px;
+     margin: 0px 0px 0px;
+ }
+
+ .rightcontent {
+     /* background-color: blue; */
+     width: 600px;
+     height: 660px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .rightcontent .myinfo {
+     justify-content: center;
+     position: absolute;
+     margin-left: 15px;
+ }
+
+ .rightcontent .myinfo .Name {
+     /* font-weight: 400; */
+     font-family: "Days One", sans-serif;
+     color: rgb(76, 76, 76);
+     font-family: "Averia Libre", system-ui;
+     text-shadow: 0px 5px 7px rgba(42, 42, 42, 0.227);
+ }
+
+ .rightcontent .myinfo .profession {
+     /* font-weight: 400; */
+     font-family: "Signika Negative", sans-serif;
+     color: rgb(105, 108, 255);
+     text-shadow: 0px 5px 7px rgba(42, 42, 42, 0.193);
+ }
+
+ .rightcontent .myinfo ul li {
+     display: inline-block;
+ }
+
+ .rightcontent .myinfo ul li a {
+     font-family: "Days One", sans-serif;
+     font-family: "Averia Libre", system-ui;
+     color: rgb(76, 76, 76);
+     text-shadow: 0px 5px 7px rgba(42, 42, 42, 0.067);
+     text-decoration: none;
+     padding-right: 9px;
+ }
+ .projectlink{
+    width: 100%;
+    /* background-color: rgba(140, 255, 0, 0.559); */
+    padding-bottom:20px;
+    display: flex;
+ }
+
+ .footer {
+     height: 200px;
+     padding-bottom: 20px;
+     padding-top: 40px;
+ }
+
+ .linek {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .line {
+     width: 60%;
+     height: 7px;
+     background-color: rgba(255, 255, 255, 0.712);
+     backdrop-filter: blur(4px);
+     border-radius: 4px;
+ }
+
+ .end {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .end h1 {
+     font-family: "Averia Libre", system-ui;
+     color: rgb(76, 76, 76);
+     /* text-shadow: 0px 5px 7px rgba(42, 42, 42, 0.067); */
+     padding-top: 15px;
+     font-size: 15px;
+     font-weight: 600;
+ }
+
+ .designs {
+     height: 60px;
+     width: 95%;
+     display: flex;
+     align-items: center;
+     margin: 0 auto;
+     /* background-color: red;
+     animation: appear 1s linear;
+     animation-timeline: view();
+     animation-range:entry 0% cover 40% ; */
+ }
+
+ .designs button {
+     width: 100%;
+     /* background-color: red; */
+     font-size: 16px;
+     color: rgb(50, 50, 50);
+     cursor: pointer;
+     display: flex;
+     text-align: left;
+     font-weight: 500;
+     font-family: "Averia Libre", system-ui;
+     background-color: transparent;
+     justify-content: center;
+ }
+
+
+ .mobilescreen {
+     width: 200px;
+     display: none;
+     position: absolute;
+     top: 110%;
+     left: 50%;
+     transform: translateX(-50%);
+     transition: opacity 0.3s ease;
+     /* opacity: 0; */
+ }
+
+ .qwsa:hover.mobilescreen {
+     display: block;
+     opacity: 0.1s;
+ }
+
+ .dfdf {
+     display: flex;
+     width: 80%;
+     justify-content: space-between;
+     
+ }
+
+ .qwsa:hover {
+     width: 100%;
+     background-color: rgba(255, 255, 255, 0.273);
+     box-shadow: 0px 5px 25px -15px;
+     height: 55px;
+     display: flex;
+     align-items: center;
+     border-radius: 18px;
+     /* justify-content: center; */
+     transition: 0.1s ease-in-out;
+     
+
+ }
+
+ .asasa {
+     width: 300px;
+     right: 390px;
+     /* top: 350px; */
+     display: none;
+     border-radius: 20px;
+     position: absolute;
+     z-index: 2;
+     /* transition: 0.5s; */
+     filter: drop-shadow(0px 0 13px rgba(30, 30, 30, 0.366));
+     transition: 1s ease-in-out;
+     
+ }
+
+ /* 
+#postion1{
+    top: 600px;
+}
+
+#postion2{
+    top: 670px;
+}
+
+#postion3{
+    top: 740px;
+}
+
+#postion4{
+    top: 810px;
+}
+#postion5{
+    top: 880px;
+}
+#postion6{
+    top: 950px;
+}
+#postion7{
+    top: 1030px;
+}
+#postion8{
+    top: 1100px;
+}
+#postion9{
+    top: 1170px;
+}
+#postion10{
+    top: 1240px;
+}
+#postion11{
+    top: 1310px;
+}
+#postion12{
+    top: 810px;
+}
+#postion13{
+    top: 810px;
+} */
+ .qwsa:hover+.asasa {
+     display: flex;
+ }
+
+ .asasa {
+    animation: appear 0.5s ease-in-out;
+    animation-iteration-count: 1;
+     position: fixed;
+     top: 20vh;
+ }
+
+ /* #mobile {
+    display: none;
+    width: 700px;
+    position: absolute;
+    text-shadow: 0px 5px 20px -15px;
+}
+
+.designs :hover.mobile {
+    opacity: 0%;
+} */
+
+ .marklindiv {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding-top: 20px;
+     padding-bottom: 30px;
+     display: none;
+ }
+
+ .dreakline {
+     width: 80%;
+     justify-content: center;
+     display: flex;
+     height: 2px;
+     background-color: rgb(118, 118, 118);
+ }
+
+
+ .clicker,
+ .hiddendiv {
+     display: none;
+ }
+
+
+
+
+ * {
+     margin: 0;
+     padding: 0;
+     border: 0;
+     text-decoration: none;
+     box-sizing: border-box;
+ }
+
+ .clicker11 {
+     width: 91%;
+     /* background-color: rgba(152, 255, 120, 0.179); */
+     background-color: rgba(105, 108, 255, 0.082);
+     height: 100px;
+     border-radius: 5px;
+     margin: 0 auto;
+     margin-top: 20px;
+     box-shadow: 0px 5px 20px -15px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     cursor: pointer;
+ }
+
+ .logocerificate {
+     width: 30%;
+     display: flex;
+     justify-content: right;
+ }
+
+ .logocerificate img {
+     height: 65px;
+     padding-right: 15px;
+
+ }
+
+ .contentbox {
+     width: 70%;
+ }
+
+ .head {
+     font-family: "Signika Negative", sans-serif;
+     font-size: 20px;
+ }
+
+ .textbox111 {
+     font-family: "Averia Libre", system-ui;
+     font-size: 17px;
+     font-weight: 600;
+ }
+
+ #myImage11 {
+     position: fixed;
+     width: 50vw;
+     border-radius: 20px;
+     filter: drop-shadow(0px 0 13px rgba(30, 30, 30, 0.366));
+     transition: 1s ease-in-out;
+     left: 465px;
+     top: 50px;
+     width: fit-content;
+     height: 68VH;
+     border-radius: 7px;
+     box-shadow: 0px 5px 20px -12px;
+     box-shadow: 0px 5px 10px -12px;
+ }
+
+ .hiddendiv11 {
+     display: none;
+     z-index: -1;
+     left: -22px;
+     top: -20px;
+     height: 100vh;
+     width: 100vw;
+     position: fixed;
+     /* background-color: rgb(137, 43, 226); */
+ }
+
+ .clicker11:focus+.hiddendiv11 {
+     display: block;
+ }
+
+
+@keyframes appear {
+    /* from{
+        opacity: 0;
+        scale: 1;
+        filter: blur(2px);
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    } */
+
+
+    0%{
+        transform: translate(0 , 15px);
+        opacity: 0;
+        scale: 1;
+        filter: blur(2px);
+    }
+    50%{
+        transform: translate(0 , 15px);
+    }
+    100%{
+        transform: translate(0 , -0px);
+        opacity: 1;
+
+    }
+}
+
+@keyframes floating {
+    0%{
+        transform: translate(0 , 15px);
+    }
+    50%{
+        transform: translate(0 , 15px);
+    }
+    100%{
+        transform: translate(0 , -0px);
+    }
+}
+
+
+ @media (max-width: 770px) {
+
+     header {
+         width: 95%;
+         height: 70px;
+         margin: 15px 0px 0px 0px;
+     }
+
+     .hedderbg {
+         height: 70px;
+     }
+
+     .myself {
+         font-size: 20px;
+         padding-left: 0px;
+     }
+
+     .myprfile {
+         width: 100%;
+         top: 80px;
+     }
+
+     #myImage11 {
+         position: fixed;
+         width: 90vw;
+         border-radius: 10px;
+         filter: drop-shadow(0px 0 13px rgba(30, 30, 30, 0.366));
+         transition: 1s ease-in-out;
+         left: 0px;
+         top: 60px;
+         width: 95vw;
+         height: fit-content;
+         border-radius: 7px;
+         box-shadow: 0px 5px 20px -12px;
+         box-shadow: 0px 5px 10px -12px;
+     }
+
+     .hiddendiv11 {
+         display: none;
+         z-index: 5;
+         left: -20px;
+         top: -20px;
+         height: 120vh;
+         width: 120vw;
+         position: fixed;
+         background-color: rgba(33, 33, 33, 0.872);
+
+     }
+
+     .middlebox {
+         width: 70%;
+     }
+
+     .logo {
+         height: 60%;
+         padding-right: 10px;
+     }
+
+     .middlebox h1 {
+         font-size: 18px;
+     }
+
+     .middlebox11 {
+         display: flex;
+         justify-content: right;
+         width: 100%;
+         padding-right: 20px;
+     }
+
+     .rightbox {
+         display: none;
+     }
+
+     .secbr {
+         height: 100px;
+     }
+
+     .body0 h1 {
+         font-size: 230%;
+         padding-top: 10px;
+         font-family: "Signika Negative", sans-serif;
+         font-weight: bolder;
+         color: rgb(82, 84, 255);
+     }
+
+     .frontgraphic img {
+         width: 80%;
+     }
+
+     .body0 ul {
+         width: 95%;
+         padding-top: 5px;
+         display: none;
+     }
+
+     .body0 ul li {
+         margin-left: 20px;
+     }
+
+     .projects {
+         padding-top: 25px;
+         padding-right: 0px;
+         display: flex;
+         flex-direction: column;
+     }
+
+     .leftcontent {
+         width: 100%;
+         display: flex;
+         justify-content: center;
+     }
+
+     .leftprojrct {
+         width: 100%;
+     }
+
+     .designs button {
+         font-size: 18px;
+         font-weight: 610;
+         text-align: justify;
+     }
+
+     .designs {
+         height: 70px;
+         display: none;
+     }
+
+     .qwsa:hover {
+         height: 65Px;
+         background-color: rgba(255, 255, 255, 0.53);
+     }
+.bio{
+    font-family: "McLaren", sans-serif;
+}
+     #postion1,
+     #postion2,
+     #postion3,
+     #postion4,
+     #postion5,
+     #postion6,
+     #postion7,
+     #postion8,
+     #postion9,
+     #postion10,
+     #postion11,
+     #postion12,
+     #postion13 {
+         display: none;
+         position: fixed;
+         top: 150px;
+         height: 73vh;
+         width: max-content;
+     }
+
+     .designsphone {
+         height: 60px;
+         width: 95%;
+         display: flex;
+         align-items: center;
+         margin: 0 auto;
+         /* background-color: red; */
+     }
+
+     .designsphone {
+         height: 60px;
+         width: 95%;
+         display: flex;
+         align-items: center;
+         margin: 0 auto;
+         /* background-color: red; */
+     }
+
+     .innerphonexox {
+         display: flex;
+         width: 80%;
+         justify-content: space-between;
+     }
+
+
+     .phoneview {
+         width: 100%;
+         /* background-color: red; */
+         font-size: 16px;
+         color: rgb(50, 50, 50);
+         cursor: pointer;
+         display: flex;
+         text-align: left;
+         font-weight: 500;
+         font-family: "Averia Libre", system-ui;
+         background-color: transparent;
+         justify-content: center;
+         font-size: 18px;
+         font-weight: 610;
+         text-align: justify;
+         display: flex;
+         align-items: center;
+         border-radius: 15px;
+         box-shadow: 0px 5px 25px -15px;
+     }
+
+     .phoneview:hover {
+         height: 65Px;
+         background-color: rgba(255, 255, 255, 0.53);
+     }
+
+     .imageback {
+         display: none;
+         position: fixed;
+         /* background-color: red; */
+         backdrop-filter: blur(4px);
+         width: 100vw;
+         height: 100vh;
+         top: 0;
+         left: 0;
+         z-index: 2;
+     }
+
+     #myImage {
+         position: absolute;
+         top: 150px;
+         height: 73vh;
+         width: max-content;
+         border-radius: 20px;
+         position: absolute;
+         z-index: 2;
+         /* transition: 0.5s; */
+         filter: drop-shadow(0px 0 13px rgba(30, 30, 30, 0.366));
+         transition: 1s ease-in-out;
+         left: 50%;
+         transform: translate(-50%, 0);
+     }
+
+     input[type="checkbox"] {
+         display: none;
+     }
+
+     input[type="checkbox"]:checked~.imageback {
+         display: block;
+     }
+
+     input[type="checkbox"]:checked~.button::after {
+         content: ' Hide Image';
+     }
+
+     .clicker {
+         height: 60px;
+         width: 95%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         margin: 0 auto;
+         border: none;
+         outline: none;
+         background-color: transparent;
+         /* background-color: rebeccapurple; */
+     }
+
+     .qswa {
+         width: 100%;
+         font-size: 16px;
+         color: rgb(50, 50, 50);
+         cursor: pointer;
+         display: flex;
+         text-align: left;
+         font-weight: 500;
+         justify-content: center;
+         font-family: "Averia Libre", system-ui;
+         background-color: transparent;
+         border: none;
+         /* background-color: brown; */
+     }
+
+     .dfdf {
+         display: flex;
+         width: 80%;
+         justify-content: space-between;
+         font-weight: 700;
+     }
+
+     .qswa:hover {
+         width: 100%;
+         background-color: rgba(255, 255, 255, 0.273);
+         box-shadow: 0px 5px 25px -15px;
+         height: 55px;
+         display: flex;
+         align-items: center;
+         border-radius: 19px;
+         transition: 0.1s ease-in-out;
+     }
+
+     .hiddendiv {
+         display: none;
+         display: none;
+         position: fixed;
+         /* background-color: red; */
+         backdrop-filter: blur(4px);
+         width: 100vw;
+         height: 100vh;
+         top: 0;
+         left: 0;
+         z-index: 2;
+     }
+
+     #myImage {
+         position: absolute;
+         top: 130px;
+         height: 73vh;
+         width: max-content;
+         border-radius: 20px;
+         position: absolute;
+         z-index: 2;
+         /* transition: 0.5s; */
+         filter: drop-shadow(0px 0 13px rgba(30, 30, 30, 0.553));
+         transition: 1s ease-in-out;
+         left: 50%;
+         transform: translate(-50%, 0);
+         transition: ease-in-out 1s;
+     }
+
+     .clicker:focus+.hiddendiv {
+         display: block;
+     }
+
+     .button::after {
+         content: '';
+     }
+
+     .rightcontent {
+         width: 100%;
+         height: 130px;
+     }
+
+     .footer {
+         padding-top: 0px;
+     }
+
+     .line {
+         width: 80%;
+     }
+
+     .marklindiv {
+         display: flex;
+
+     }
+
+     .endmedialink {
+         display: flex;
+     }
+
+     .asasa {
+         width: 90vh;
+         top: 100px;
+         left: 50%;
+         position: fixed;
+         transform: translate(-50%, 0);
+     }
+ }
+
+ @media (max-width: 390px) {
+     body {
+         display: none;
+     }
+ }
